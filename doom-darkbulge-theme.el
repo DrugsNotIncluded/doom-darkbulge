@@ -52,7 +52,7 @@ determine the exact padding."
 
    (fw-yellow-text '("#ebdbb2" "#FFFF00" "yellow"))
    (fw-yellow-muted '("#3e381f" "#FFFF00" "yellow"))
-   (fw-yellow '("#d79921" "" "yellow"))
+   (fw-yellow '("#b57614" "" "yellow"))
 
    (fw-red-text        '("#5b4343" "#663333" "brightblack"))
    (fw-red-text-sec    '("#955f5f" "#996666" "brightblack"))
@@ -61,7 +61,7 @@ determine the exact padding."
 
    (fw-green-text      '("#ebdbb2" "#666633" "brightblack"))
    (fw-green-text-sec  '("#81895d" "#999966" "brightblack"))
-   (fw-green           '("#84bd00" "#99cc00" "green"))
+   (fw-green           '("#98971a" "#99cc00" "green"))
    (fw-green-blend     '("#2e3b29" "#ccffcc" "brightgreen"))
 
    (fw-teal-text       '("#a7c7c7" "#336666" "brightblack"))
@@ -71,7 +71,7 @@ determine the exact padding."
 
    (fw-blue-text       '("#d5c4a1" "#336666" "brightblack"))
    (fw-blue-text-sec   '("#7382a0" "#669999" "brightblack"))
-   (fw-blue            '("#75a3ff" "#6699ff" "blue"))
+   (fw-blue            '("#076678" "#6699ff" "blue"))
    (fw-blue-blend      '("#4a5960" "#ccccff" "brightblue"))
 
    (fw-purple-text     '("#fffdfd" "#663366" "Brightblack"))
@@ -201,6 +201,10 @@ determine the exact padding."
 
    ;;;; centaur-tabs
    (centaur-tabs-unselected :background bg-alt :foreground base4)
+
+   ;;; flymake
+   (flymake-warning-echo-at-eol :background fw-base6 :foreground fw-yellow)
+   
    ;;;; swiper
    (swiper-line-face    :background fw--light-accent
                         :foreground fw-blue-text)
@@ -239,13 +243,16 @@ determine the exact padding."
 						 :background fw-base2
 						 :weight 'bold)
 
-  (nano-modeline-inactive :foreground fw-base1
+   (nano-modeline-inactive :foreground fw-base1
 						:background fw-base4
 						:weight 'bold)
   
-  (nano-modeline-status :foreground fw-base1
+   (nano-modeline-status :foreground fw-base1
 						:background fw-base4
 						:weight 'bold)
+
+   ;;; flycheck
+   (flycheck-warning :underline `(:style wave :color ,"#bdae93"))
    
    ;;;; company
    (company-tooltip            :inherit 'tooltip)

@@ -1,7 +1,7 @@
 # doom-darkbulge
 Original theme link: https://github.com/biletskyy/flatwhite-syntax
 Emacs theme. An attempt to port doom-flatwhite to dark gruvbox palette
-![img_1.png](img_1.png)
+![img.png](img.png)
 
 ### Incomplete for now, but at least i can code at night
 * Supports nano-modeline
